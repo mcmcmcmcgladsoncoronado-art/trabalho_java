@@ -1,0 +1,398 @@
+AULA 07 — TRABALHO B1-T3: DESENVOLVIMENTO, SIMULAÇÃO E APRESENTAÇÃO
+===================================================================
+
+Curso: CST em Sistemas para Internet (4º período)
+Disciplina: Metodologias Ágeis
+Professor: Ranghetti
+
+---
+
+OBJETIVO DO TRABALHO B1-T3
+===========================
+
+Tema: Implementação de Kanban para um time de desenvolvimento web
+Valor: Até 1,0 ponto
+
+Objetivo:
+- Representar um fluxo realista de trabalho
+- Definir regras que apoiem decisões do time
+- Verificar o comportamento do sistema por meio de simulação
+- Identificar oportunidades de melhoria
+
+---
+
+ENTREGÁVEIS OBRIGATÓRIOS
+=========================
+
+1. Contexto do produto e do serviço observado
+
+2. Quadro Kanban contendo:
+   - Colunas coerentes com o fluxo
+   - 10–15 cartões distribuídos
+   - Tipos de trabalho identificados
+   - Bloqueios ou dependências visíveis
+   - Limites de WIP
+
+3. Políticas explícitas para:
+   - Entrada
+   - Puxada
+   - Movimentação
+   - Bloqueio
+   - Entrega
+
+4. Mapeamento textual do fluxo
+
+5. Justificativa das principais decisões
+
+6. Registro resumido da simulação e das melhorias propostas
+
+---
+
+ETAPA 1: DESENVOLVIMENTO
+=========================
+
+1.1 - Desenvolvimento do Contexto
+----------------------------------
+Definir ou revisar:
+- Produto ou serviço web observado
+- Usuários ou clientes atendidos
+- Tipos de demanda que chegam ao time
+- Ponto de início do fluxo
+- Resultado que caracteriza a entrega
+
+O contexto deve permitir compreender:
+- De onde vem o trabalho
+- Como ele é selecionado
+- Quais etapas percorre
+- Quando gera valor para o cliente
+
+1.2 - Desenvolvimento do Quadro
+--------------------------------
+- Representar o fluxo real, não apenas um fluxo ideal
+- Exemplo de colunas possíveis:
+  * Solicitado
+  * Pronto para desenvolver
+  * Em desenvolvimento
+  * Revisão
+  * Testes
+  * Entregue
+- Ajustar as colunas ao contexto da equipe
+- Quando necessário, separar trabalho ativo de trabalho aguardando
+- Identificar claramente os pontos de compromisso e de entrega
+
+1.3 - Preparação dos Cartões
+-----------------------------
+- Distribuir de 10 a 15 cartões pelo quadro
+- Cada cartão deve conter:
+  * Identificador e título
+  * Tipo de trabalho
+  * Resultado esperado
+  * Critérios relevantes
+  * Dependências ou riscos
+
+- Representar situações diferentes:
+  * Funcionalidade
+  * Defeito
+  * Melhoria técnica
+  * Demanda com data fixa, quando aplicável
+
+- OBRIGATÓRIO: Incluir pelo menos um item bloqueado ou uma dependência visível
+
+1.4 - Definição de Limites de WIP
+----------------------------------
+Definir limites para as etapas em andamento considerando:
+- Capacidade da equipe
+- Necessidade de colaboração
+- Risco de formar filas
+- Capacidade das etapas seguintes
+
+Exemplo inicial:
+- Em desenvolvimento: 3
+- Revisão: 2
+- Testes: 2
+
+Os números não precisam ser perfeitos, mas devem ser:
+- Explícitos
+- Justificáveis
+- Testados na simulação
+
+1.5 - Políticas Explícitas
+--------------------------
+Definir regras visíveis para:
+- Aceitar um item no fluxo comprometido
+- Selecionar o próximo item
+- Iniciar o desenvolvimento
+- Avançar para revisão ou testes
+- Sinalizar e tratar bloqueios
+- Tratar exceções ou itens urgentes
+- Considerar um item entregue
+
+Boas políticas são:
+- Claras
+- Aplicáveis
+- Conhecidas pela equipe
+- Passíveis de revisão
+
+1.6 - Checklist antes da Simulação
+-----------------------------------
+[ ] O início e o fim do fluxo estão claros?
+[ ] As colunas representam estados ou atividades relevantes?
+[ ] Os cartões podem ser compreendidos por outro grupo?
+[ ] Os limites de WIP estão visíveis?
+[ ] Existem políticas para entrada, puxada, avanço e entrega?
+[ ] Bloqueios, dependências e tipos de trabalho são identificáveis?
+[ ] A equipe consegue explicar por que escolheu esse desenho?
+[ ] O quadro está pronto para ser operado, e não apenas observado?
+
+---
+
+ETAPA 2: SIMULAÇÃO
+===================
+
+2.1 - Preparação da Simulação
+------------------------------
+Definir funções durante a dinâmica:
+- Uma pessoa conduz as rodadas
+- Uma pessoa movimenta ou atualiza os cartões
+- Uma pessoa registra eventos e resultados
+- Os demais integrantes analisam o fluxo e aplicam as políticas
+
+Preparar:
+- Estado inicial do quadro
+- Limites de WIP
+- Políticas visíveis
+- Espaço para registrar bloqueios, filas e decisões
+
+TODOS os integrantes devem compreender as regras antes de iniciar.
+
+2.2 - Execução das Rodadas
+--------------------------
+Realizar rodadas curtas representando períodos de trabalho.
+
+Em cada rodada:
+1. Verificar os itens que podem avançar ou ser concluídos
+2. Respeitar os limites de WIP
+3. Tratar ou sinalizar bloqueios
+4. Puxar novo trabalho somente quando existir capacidade
+5. Registrar decisões e situações relevantes
+
+REGRA DE FOCO:
+Antes de iniciar mais trabalho, verificar como ajudar a concluir o que já está em andamento.
+
+2.3 - Eventos para Considerar na Simulação
+-------------------------------------------
+- Um item em testes apresenta defeito e precisa retornar
+- Um item fica bloqueado por dependência externa
+- Uma demanda com data fixa entra no sistema
+- A etapa de revisão atinge seu limite de WIP
+- Um integrante fica temporariamente indisponível
+
+A equipe deve decidir:
+- O que fazer conforme as políticas atuais
+- Qual trabalho não pode ser iniciado
+- Onde colaborar para preservar o fluxo
+
+2.4 - Observação e Registro
+----------------------------
+Durante a simulação, registrar:
+- Etapas que acumularam cartões
+- Limites de WIP alcançados
+- Itens bloqueados e tempo de espera
+- Decisões tomadas pela equipe
+- Políticas que ajudaram
+- Políticas ausentes, vagas ou contraditórias
+
+PERGUNTA CENTRAL:
+O sistema tornou os problemas visíveis e apoiou decisões coerentes?
+
+2.5 - Identificação de Gargalos
+-------------------------------
+Um gargalo limita a capacidade do fluxo como um todo.
+
+Indícios observáveis:
+- Acúmulo recorrente antes de uma etapa
+- Itens permanecendo parados
+- Limite de WIP frequentemente atingido
+- Etapas anteriores continuando a iniciar trabalho
+- Dependência frequente de uma única pessoa ou recurso
+
+ATENÇÃO:
+Uma fila isolada não comprova sozinha um gargalo permanente.
+É necessário observar o comportamento ao longo das rodadas.
+
+2.6 - Lead Time e Cycle Time
+----------------------------
+Lead time:
+- Tempo entre a entrada definida da demanda e sua entrega
+
+Cycle time:
+- Tempo entre o início e a conclusão do trabalho, conforme os pontos adotados
+
+Nesta atividade:
+- Cada rodada pode representar uma unidade de tempo
+- A equipe pode acompanhar um ou mais cartões do início ao fim
+
+O objetivo não é produzir uma previsão estatística definitiva.
+O objetivo é perceber como filas, bloqueios e excesso de WIP afetam o tempo de entrega.
+
+2.7 - Melhoria Baseada em Evidências
+------------------------------------
+Após as primeiras rodadas:
+1. Escolher um problema observado
+2. Formular uma hipótese de melhoria
+3. Realizar uma pequena alteração
+4. Executar uma nova rodada
+5. Comparar o comportamento do sistema
+
+Possíveis experimentos:
+- Ajustar um limite de WIP
+- Tornar uma política mais clara
+- Colaborar com a etapa que acumula trabalho
+- Separar estado ativo de estado de espera
+- Criar uma regra explícita para bloqueios
+
+2.8 - Tabela de Registro da Simulação
+-------------------------------------
+| Aspecto | Registro da equipe |
+|---|---|
+| Problema observado | O que ocorreu no fluxo? |
+| Evidência | Que cartões, filas ou rodadas demonstraram o problema? |
+| Hipótese | Que mudança pode melhorar o sistema? |
+| Experimento | Qual pequena alteração foi realizada? |
+| Resultado | O comportamento melhorou, piorou ou permaneceu igual? |
+| Próximo passo | O que a equipe faria em seguida? |
+
+---
+
+ETAPA 3: APRESENTAÇÃO
+======================
+
+3.1 - Preparação da Apresentação
+--------------------------------
+- Organizar uma apresentação curta e objetiva
+- TODOS os integrantes devem compreender o trabalho completo
+
+Demonstrar:
+- Contexto do produto e do serviço
+- Estrutura do quadro e fluxo escolhido
+- Limites de WIP
+- Políticas mais importantes
+- Funcionamento da simulação
+- Problema identificado e melhoria proposta
+
+PRIORIZAR evidências e justificativas, não apenas a descrição das colunas.
+
+3.2 - Roteiro da Apresentação
+-----------------------------
+Tempo sugerido: 4–6 minutos por equipe
+
+Roteiro:
+1. Contexto e objetivo do sistema
+2. Ponto de compromisso e ponto de entrega
+3. Fluxo, cartões e tipos de trabalho
+4. Limites de WIP e políticas explícitas
+5. Evento ocorrido durante a simulação
+6. Gargalo, bloqueio ou fila observado
+7. Experimento de melhoria e resultado
+
+Ao final: Responder às perguntas do professor e da turma
+
+3.3 - Critérios de Avaliação
+----------------------------
+| Critério | Pontuação |
+|---|---:|
+| Contexto e representação coerente do fluxo | |
+| Quadro, cartões e clareza visual | |
+| Limites de WIP e políticas explícitas | |
+| Simulação, análise e proposta de melhoria | |
+| Apresentação e domínio da equipe | |
+| **Total** | **1,00** |
+
+---
+
+CHECKLIST DE ENTREGA
+====================
+
+[ ] Contexto do produto e do serviço identificado
+[ ] Quadro legível e completo
+[ ] 10–15 cartões distribuídos
+[ ] Tipos de trabalho visíveis
+[ ] Bloqueio ou dependência representado
+[ ] Limites de WIP definidos
+[ ] Políticas explícitas registradas
+[ ] Fluxo descrito textualmente
+[ ] Decisões justificadas
+[ ] Simulação e melhoria resumidas
+[ ] Identificação de todos os integrantes
+
+---
+
+PERGUNTAS PARA FEEDBACK ENTRE EQUIPES
+======================================
+
+- O quadro representa um fluxo realista?
+- O ponto de compromisso está claro?
+- O ponto de entrega corresponde à geração de valor?
+- Os limites de WIP influenciam o comportamento do sistema?
+- As políticas ajudam a decidir ou são apenas frases genéricas?
+- Os bloqueios ficam visíveis e possuem tratamento definido?
+- A melhoria proposta responde a uma evidência da simulação?
+- Qual decisão da equipe foi mais bem justificada?
+
+---
+
+GLOSSÁRIO DA ATIVIDADE
+======================
+
+WIP — Work in Progress
+- Trabalho iniciado e ainda não concluído
+
+Limite de WIP
+- Restrição sobre quantos itens podem ocupar determinada parte do fluxo
+
+Sistema puxado
+- Sistema em que novo trabalho é iniciado quando existe capacidade disponível
+
+Política explícita
+- Regra visível que orienta seleção, movimentação ou conclusão do trabalho
+
+Bloqueio
+- Condição que impede temporariamente o avanço de um item
+
+Gargalo
+- Parte do sistema cuja capacidade restringe o fluxo geral
+
+Lead time
+- Tempo entre pontos definidos de entrada da demanda e entrega
+
+Cycle time
+- Tempo entre o início e a conclusão do trabalho, conforme a definição adotada
+
+---
+
+REFERÊNCIAS
+===========
+
+COLEMAN, John et al. The Kanban Guide. Maio de 2025.
+Disponível em: https://kanbanguides.org/the-kanban-guide/
+
+KANBAN UNIVERSITY. The Official Guide to The Kanban Method.
+Disponível em: https://kanban.university/kanban-guide/
+
+KANBAN UNIVERSITY. The Kanban Method Infographic.
+Disponível em: https://kanban.university/resources/kanbanmethodinfographic/
+
+AGILE ALLIANCE. What is Kanban?
+Disponível em: https://agilealliance.org/glossary/kanban/
+
+---
+
+LINK DO TRELLO DO TRABALHO
+===========================
+
+https://trello.com/b/L1R1t79j/trabalho
+
+---
+
+Aula 07 — Metodologias Ágeis
+Criado em 09 de Setembro de 2026
